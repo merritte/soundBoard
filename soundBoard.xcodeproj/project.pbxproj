@@ -14,6 +14,7 @@
 		DEC239DE1A9287C300798C46 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC239DD1A9287C300798C46 /* Images.xcassets */; };
 		DEC239E11A9287C300798C46 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC239DF1A9287C300798C46 /* LaunchScreen.xib */; };
 		DEC239ED1A9287C400798C46 /* soundBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC239EC1A9287C400798C46 /* soundBoardTests.swift */; };
+		DEE39B071A92DCD500121B1F /* dude.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DEE39B061A92DCD500121B1F /* dude.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		DEC239E61A9287C400798C46 /* soundBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = soundBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC239EB1A9287C400798C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEC239EC1A9287C400798C46 /* soundBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soundBoardTests.swift; sourceTree = "<group>"; };
+		DEE39B061A92DCD500121B1F /* dude.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = dude.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		DEC239D01A9287C300798C46 /* soundBoard */ = {
 			isa = PBXGroup;
 			children = (
+				DEE39B061A92DCD500121B1F /* dude.m4a */,
 				DEC239D31A9287C300798C46 /* AppDelegate.swift */,
 				DEC239D81A9287C300798C46 /* SoundListViewController.swift */,
 				DEC239DA1A9287C300798C46 /* Main.storyboard */,
@@ -197,6 +200,7 @@
 			files = (
 				DEC239DC1A9287C300798C46 /* Main.storyboard in Resources */,
 				DEC239E11A9287C300798C46 /* LaunchScreen.xib in Resources */,
+				DEE39B071A92DCD500121B1F /* dude.m4a in Resources */,
 				DEC239DE1A9287C300798C46 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +415,7 @@
 				DEC239F21A9287C400798C46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DEC239F31A9287C400798C46 /* Build configuration list for PBXNativeTarget "soundBoardTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				DEC239F51A9287C400798C46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

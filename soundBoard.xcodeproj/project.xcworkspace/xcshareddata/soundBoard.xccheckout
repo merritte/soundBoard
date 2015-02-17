@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5CA5CDEB-5EB4-44EB-9497-27F088B5A743</string>
+	<key>IDESourceControlProjectName</key>
+	<string>soundBoard</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>48375E7A55995F99E6C2618314E8FFED25D4720B</key>
+		<string>https://github.com/merritte/soundBoard.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>soundBoard.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>48375E7A55995F99E6C2618314E8FFED25D4720B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/merritte/soundBoard.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>48375E7A55995F99E6C2618314E8FFED25D4720B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>48375E7A55995F99E6C2618314E8FFED25D4720B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>soundBoard</string>
+		</dict>
+	</array>
+</dict>
+</plist>
