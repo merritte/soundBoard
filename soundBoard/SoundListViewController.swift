@@ -15,19 +15,36 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
     
     var audioPlayer = AVAudioPlayer()
     
+    var sounds: [Sound] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        
+        var soundPath = NSBundle.mainBundle().pathForResource("dude", ofType: "m4a")
+        var soundURL = NSURL.fileURLWithPath(soundPath!)
+        
+        var sound1 = Sound()
+        sound1.name = "duuude"
+        sound1.URL = soundURL!
+        
+        var sound2 = Sound()
+        sound2.name = "lulz"
+        sound2.URL = soundURL!
+        
+        self.sounds.append(sound1)
+        self.sounds.append(sound2)
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.sounds.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var sound = self.sounds[indexPath.row]
         var cell = UITableViewCell()
-        cell.textLabel!.text = "Dude"
+        cell.textLabel!.text = sound.name
         return cell
     }
     
@@ -40,6 +57,10 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
         self.audioPlayer.play()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var nextViewController = segue.destinationViewController as NewSoundViewController
+        nextViewController.previousViewController = self
+    }
     
 }
 

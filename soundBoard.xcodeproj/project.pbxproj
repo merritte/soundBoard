@@ -15,6 +15,8 @@
 		DEC239E11A9287C300798C46 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC239DF1A9287C300798C46 /* LaunchScreen.xib */; };
 		DEC239ED1A9287C400798C46 /* soundBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC239EC1A9287C400798C46 /* soundBoardTests.swift */; };
 		DEE39B071A92DCD500121B1F /* dude.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DEE39B061A92DCD500121B1F /* dude.m4a */; };
+		DEE39B091A92E0EB00121B1F /* sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE39B081A92E0EB00121B1F /* sound.swift */; };
+		DEE39B0B1A943D9700121B1F /* NewSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE39B0A1A943D9700121B1F /* NewSoundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		DEC239EB1A9287C400798C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEC239EC1A9287C400798C46 /* soundBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soundBoardTests.swift; sourceTree = "<group>"; };
 		DEE39B061A92DCD500121B1F /* dude.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = dude.m4a; sourceTree = "<group>"; };
+		DEE39B081A92E0EB00121B1F /* sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sound.swift; sourceTree = "<group>"; };
+		DEE39B0A1A943D9700121B1F /* NewSoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				DEE39B061A92DCD500121B1F /* dude.m4a */,
+				DEE39B081A92E0EB00121B1F /* sound.swift */,
 				DEC239D31A9287C300798C46 /* AppDelegate.swift */,
 				DEC239D81A9287C300798C46 /* SoundListViewController.swift */,
+				DEE39B0A1A943D9700121B1F /* NewSoundViewController.swift */,
 				DEC239DA1A9287C300798C46 /* Main.storyboard */,
 				DEC239DD1A9287C300798C46 /* Images.xcassets */,
 				DEC239DF1A9287C300798C46 /* LaunchScreen.xib */,
@@ -222,6 +228,8 @@
 				DEC239D91A9287C300798C46 /* SoundListViewController.swift in Sources */,
 				DEC239D71A9287C300798C46 /* soundBoard.xcdatamodeld in Sources */,
 				DEC239D41A9287C300798C46 /* AppDelegate.swift in Sources */,
+				DEE39B091A92E0EB00121B1F /* sound.swift in Sources */,
+				DEE39B0B1A943D9700121B1F /* NewSoundViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
