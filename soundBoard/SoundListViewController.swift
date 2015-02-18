@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import CoreData
 
 class SoundListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -22,21 +23,20 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
         // Do any additional setup after loading the view, typically from a nib.
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        
-        var soundPath = NSBundle.mainBundle().pathForResource("dude", ofType: "m4a")
-        var soundURL = NSURL.fileURLWithPath(soundPath!)
-        
-        var sound1 = Sound()
-        sound1.name = "duuude"
-        sound1.URL = soundURL!
-        
-        var sound2 = Sound()
-        sound2.name = "lulz"
-        sound2.URL = soundURL!
-        
-        self.sounds.append(sound1)
-        self.sounds.append(sound2)
+                
+
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        //do it...
+        var context = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext!
+
+        var request = NSFetchRequest(entityName: "Sound")
+        
+        self.sounds = context.executeFetchRequest(request, error: nil)! as [Sound]
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.sounds.count
     }
@@ -49,11 +49,13 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-       var soundPath = NSBundle.mainBundle().pathForResource("dude", ofType: "m4a")
-       var soundURL = NSURL.fileURLWithPath(soundPath!)
+        var sound = self.sounds[indexPath.row]
         
+        var baseString : String = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as String
+        var pathComponents = [baseString, sound.url]
+        var audioNSURL = NSURL.fileURLWithPathComponents(pathComponents)
         
-        self.audioPlayer = AVAudioPlayer(contentsOfURL: soundURL, error: nil)
+        self.audioPlayer = AVAudioPlayer(contentsOfURL: audioNSURL, error: nil)
         self.audioPlayer.play()
     }
     
